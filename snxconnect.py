@@ -428,9 +428,9 @@ def main () :
         )
     cmd.add_argument \
         ( '--ssl-noverify'
-        , help     = 'Skip SSL verification default="%(default)s"'
-        , default  = False
-        , required = False
+        , help    = 'Skip SSL verification, default="%(default)s"'
+        , action  = 'store_true'
+        , default = cfg.get ('ssl_noverify', False)
         )
     cmd.add_argument \
         ( '--height-data'
