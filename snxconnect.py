@@ -406,23 +406,23 @@ def main () :
         )
     cmd.add_argument \
         ( '-D', '--debug'
-        , help    = 'Debug handshake'
+        , help    = 'Debug handshake, default="%(default)s"'
         , action  = 'store_true'
         , default = cfg.get ('debug', None)
         )
     cmd.add_argument \
         ( '-F', '--file'
-        , help    = 'File part of URL default="%(default)s"'
+        , help    = 'File part of URL, default="%(default)s"'
         , default = cfg.get ('file', 'sslvpn/Login/Login')
         )
     cmd.add_argument \
         ( '-E', '--extender'
-        , help    = 'File part of URL default="%(default)s"'
+        , help    = 'File part of URL, default="%(default)s"'
         , default = cfg.get ('extender', 'sslvpn/SNX/extender')
         )
     cmd.add_argument \
         ( '-H', '--host'
-        , help     = 'Host part of URL default="%(default)s"'
+        , help     = 'Host part of URL, default="%(default)s"'
         , default  = host
         , required = not host
         )
@@ -434,7 +434,7 @@ def main () :
         )
     cmd.add_argument \
         ( '--height-data'
-        , help    = 'Height data in form, default "%(default)s"'
+        , help    = 'Height data in form, default="%(default)s"'
         , default = cfg.get ('height_data', '')
         )
     cmd.add_argument \
