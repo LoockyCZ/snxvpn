@@ -151,6 +151,8 @@ Then you need to install some packages that contain libraries needed by
 - ``libgcc1:i386``
 - ``libxau6:i386``
 - ``libxdmcp6:i386``
+- ``libpam0g:i386``
+- ``libx11-6:i386``
 
 To check if you have all necessary libraries, you can run ``ldd`` on the
 ``snx`` binary (with sudo to root)::
